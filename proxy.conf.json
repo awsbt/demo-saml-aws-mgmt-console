@@ -1,0 +1,26 @@
+{
+  "/token": {
+    "target": "https://a69e80e8acf234136b39b2ab4696b994-173064cd886f9481.elb.us-gov-east-1.amazonaws.com:443/am/oauth2/access_token",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/token": ""
+    }
+  },
+  "/detail": {
+      "target": "https://a69e80e8acf234136b39b2ab4696b994-173064cd886f9481.elb.us-gov-east-1.amazonaws.com:443/am/oauth2/userinfo",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/detail": ""
+      }
+    },
+  "/logout": {
+    "target": "https://a69e80e8acf234136b39b2ab4696b994-173064cd886f9481.elb.us-gov-east-1.amazonaws.com:443/am/oauth2/connect/endSession",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/logout": ""
+    }
+  }
+}

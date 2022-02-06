@@ -1,0 +1,18 @@
+{
+    "/token": {
+      "target": "https://awsfroidcsaml2.tk:8443/am/oauth2/realms/root/realms/oidc/access_token",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/token": ""
+      }
+    },
+    "/detail": {
+        "target": "https://awsfroidcsaml2.tk:8443/am/oauth2/realms/root/realms/oidc/userinfo",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+          "^/detail": ""
+        }
+      }
+}

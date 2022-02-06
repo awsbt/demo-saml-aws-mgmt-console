@@ -1,0 +1,18 @@
+{
+    "/token": {
+      "target": "https://afc7b5a6b025b4828bf8bad6eadfdcee-eaa53f72a0e29f95.elb.us-east-1.amazonaws.com:443/am/oauth2/access_token",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/token": ""
+      }
+    },
+    "/detail": {
+        "target": "https://afc7b5a6b025b4828bf8bad6eadfdcee-eaa53f72a0e29f95.elb.us-east-1.amazonaws.com:443/am/oauth2/userinfo",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+          "^/detail": ""
+        }
+      }
+}
